@@ -1,0 +1,67 @@
+.actionBar{
+	background-color: $color-brand-primary;
+	@include at2x('../images/bg-actionbar', 'png');
+	background-repeat: repeat-y;
+	background-position: right;
+	width: 100%;
+	height: $actionBar-height;
+	display: table;
+	position: fixed;
+	top: $navbar-height;
+	z-index: 1000;
+
+	.container{
+		padding: 1.2em .5rem .5rem;
+		display: table-cell;
+	    vertical-align: middle;
+
+	    .wrap-searchbar {
+			@include make-sm-column(8);
+		}
+		.wrap-uploadbutton {
+			@include make-sm-column(4);
+		}
+	}
+}
+
+
+
+.actionBar .btn-primary, .actionBar .form-control{
+	height: $searchbar-height;
+}
+
+/*Search bar*/
+.actionBar input.form-control, .actionBar .if-addon{
+	//border-radius: 0;
+}
+
+.input-group-addon.if-addon {
+    background-color: #fff;
+    color: $color-brand-primary;
+    border: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    //width: $searchbar-height;
+}
+
+input.form-control.if-search {
+    border-left: none !important;
+    border-bottom: 0;
+    border-top: 0;
+    border-right: 1px solid $color-brand-primary;
+    box-shadow: none;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/*Filter button*/
+button.btn-filter{
+	@include button-variant(#fff, $color-brand-secondary, transparent);
+	margin-left: 1rem !important;
+	width: $searchbar-height;
+
+		.caret{
+			display: none;
+		}
+}
+

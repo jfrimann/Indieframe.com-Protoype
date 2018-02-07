@@ -1,0 +1,5 @@
+#ReporterMap { 
+	height: -webkit-calc(100vh - #{$content-y-offset});
+  	height: -moz-calc(100vh - #{$content-y-offset});
+  	height: calc(100vh - #{$content-y-offset});
+}

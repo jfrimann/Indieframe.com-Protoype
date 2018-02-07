@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+    <% include partials/nav %>
+    <% include partials/actionbar %>
+    <main id="PageContent">
+      <div class="container">
+        <header>
+          <h1>Add Information</h1>
+          <div class="if-subheader">You are currently adding information to <strong>Stock_title.mov</strong></div>
+        </header>   
+
+        <section id="Addinfo">
+          <div class="upload-navigation">
+            <nav class="">
+              <ul class="pagination pagination-lg">
+                <li class="disabled"><a href="#" aria-label="Previous"><i class="fa fa-caret-left" aria-hidden="true"></i></a></li>
+                <li class=""><a href="#">1</a></li>
+                <li class=""><a href="#">2</a></li>
+                <li class="active"><a href="#">3 <span class="sr-only">(current)</span></a></li>
+                <li class=""><a href="#">4</a></li>
+                <li class=""><a href="#" aria-label="next"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="column-item-preview">
+            <!-- Pagination -->
+            <div class="item-preview">
+              <img src="assets/images/flick1.jpg" alt="stock title">
+            </div>
+            <!-- Upload progress -->
+            <div class="col-md-12 upload-item ui-block">
+              <div class="ui-box">
+                <div class="col-xs-5 ui-info">
+                  <span class="ui-title">StockTitle_and_a_whole_log_more.jpg</span>
+                </div>
+                <div class="col-xs-6 ui-progress">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                      60%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-1 ui-close">
+                  <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div> <!-- end column-item-preview -->
+
+          <div class="item-addinfo">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Add Item title">
+                <textarea class="form-control" rows="7" placeholder="Add Item description"></textarea>
+                <input type="text" class="form-control" placeholder="Add tags (Seperated by commas)">
+              </div>
+              <div class="inline-elements">
+                <div class="add-price">
+                  <input type="number" class="form-control" placeholder="Add price">
+                </div>
+                <div class="add-location">
+                  <input type="text" class="form-control" placeholder="Add location">
+                </div>
+              </div>
+              <div class="checkbox pull-right">
+                <label>
+                  <span class="pull-left" style="margin-right: 2em;">Use the same data for all the uploaded items</span>
+                  <input type="checkbox">
+                </label>
+              </div>
+                <div class="publishButton">
+                  <div>
+                    <button type="submit" class="btn btn-lg btn-tertiary btn-block">Publish and go to next</button>
+                  </div>
+                </div>
+            </form>
+          </div> <!-- end item-addinfo -->
+        </section> <!-- end AddInfo -->
+      </div> <!-- end container -->
+      
+    </main> <!-- end PageContent -->
+    <% include partials/footer %>
+    <% include partials/scripts %>
+  </body>
+</html>

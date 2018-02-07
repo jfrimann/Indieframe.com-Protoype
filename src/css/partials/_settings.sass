@@ -1,0 +1,65 @@
+// Breakpoints
+$screen-sm-min: 767px
+$screen-md-min: 992px
+$screen-lg-min: 1200px
+$screen-xl-min: 1400px
+$screen-xxl-min: 1700px
+
+// Font
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800)
+//@import url(../../vendor/Open_Sans);
+$font-primary: 'Open Sans', sans-serif
+$font-secondary: serif
+$font-size: 12px
+$font-size-sm: ceil(($font-size * 1)) // 12px
+$font-size-md: ceil(($font-size * 1)) // 12px
+$font-size-lg: ceil(($font-size * 1)) // 12px
+
+// Colors
+// $gray-base:              #000 !default;
+// $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+// $gray-dark:              lighten($gray-base, 20%) !default;   // #333
+// $gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light: #e4e4e4
+$gray-lighter: #f7f7f7
+
+$color-primary: #000
+$color-secondary: #fff
+$color-text: #000
+$color-highlight: #999
+$color-background: $gray-lighter
+$color-border: #e5e5e5
+$color-error: #f44336
+$color-warning: #ffc107
+$color-notice: #2196f3
+$color-success: #24cf91 //#00e577 //indieFrame color
+$brand-success: $color-success
+$color-brand-primary: #e50047 //indieFrame brand color (pink)
+$color-brand-secondary: #e94750 //indieFrame (dusty red)
+$color-brand-tertiary: #1395ba //indieFrame (blue)
+$brand-primary: $color-brand-primary //overwrites the default bootstrap color
+$color-facebook: #496399
+$color-twitter: #1da1f2
+$color-google-plus: #db4437
+$color-pinterest: #bd2125
+$input-border: $gray-lighter
+
+$navbar-default-link-color: $color-primary !default
+$navbar-default-link-hover-color: $color-brand-primary !default
+
+// Sizes
+$padding-small: 1em
+$border-radius-base: 0px
+$border-radius-large: 0px
+$border-radius-small: 0px
+$actionBar-height: 80px
+$footer-height: 220px
+$navbar-height: 50px
+$navbar-height-mobile: 60px
+$searchbar-height: 50px
+$page-padding-vertical: 2.5em
+$content-y-offset: $navbar-height + $actionBar-height
+$social-button-height: $navbar-height-mobile - 5px
+$myWidth: 100%
+$viewport-height: calc(100vh - #{$content-y-offset})
+$newsfeedBar-height: 2em

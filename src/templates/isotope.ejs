@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+    <% include partials/nav %>
+    <% include partials/actionbar %>
+    <main id="PageContent">
+      <section id="BannerIntro" class="container-fluid ">
+        <div id="FrontpageHero" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="header-container">
+            <h1>Create local content<br>Get global income
+            <div><button class="btn btn-default btn-lg" onclick="window.location = '/indieframe/create-account.html';">Create your free account</button></div>
+            </h1>  
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img class="img-responsive" src="assets/images/slider1.jpg" alt="bla">
+            </div>
+            <div class="item">
+              <img class="img-responsive" src="assets/images/slider2.jpg" alt="bla">
+            </div>
+            <div class="item">
+              <img class="img-responsive" src="assets/images/slider3.jpg" alt="bla">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Newsfeed" class="container-fluid "> 
+        <h2>Explore a world of photos and videos</h2>
+        <div class="feed-filters">
+          <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a data-toggle="pill" href="#All">All</a></li>
+            <li role="presentation"><a data-toggle="pill" href="#Photos"><i class="fa fa-camera-retro"></i>Photos</a></li>
+            <li role="presentation"><a data-toggle="pill" href="#Video"><i class="fa fa-video-camera"></i>Videos</a></li>
+          </ul>
+          <!--span class="feed-result-count">1.245 results</span-->
+        </div>
+        <div class="mason-wrapper grid">
+          <div class="grid-sizer"></div>
+          <div class="gutter-sizer"></div>
+          <div class="grid-item">
+              <img class="img-responsive" src="assets/images/flick1.jpg">
+          </div>
+          <div class="grid-item">
+              <img class="img-responsive" src="assets/images/flick2.jpg">
+          </div>
+          <div class="grid-item">
+              <img class="img-responsive" src="assets/images/flick3.jpg">
+          </div>
+          <div class="grid-item">
+              <img class="img-responsive" src="assets/images/flick4.jpg">
+          </div>
+          <div class="grid-item">
+              <img class="img-responsive" src="assets/images/flick5.jpg">
+          </div>
+          <div class="grid-item">
+              <img class="img-responsive" src="assets/images/flick6.jpg">
+          </div>
+          <div class="grid-item">
+              <img class="img-responsive" src="assets/images/flick7.jpg">
+          </div>
+          <div class="grid-item">
+              <img class="img-responsive" src="assets/images/flick8.jpg">
+          </div>
+          <div class="grid-item">
+              <img class="img-responsive" src="assets/images/flick9.jpg">
+          </div>
+          <div class="grid-item">
+              <img class="img-responsive" src="assets/images/flick10.jpg">
+          </div>
+
+         <!--  <article class="item">
+            <div class="well">
+              <div class="feed-header">
+                <span class="feed-profile"><img class="img-profile" src="assets/images/avatar2.jpg" alt="Users name"><a href="/profile-public.html">Jesper Frimann</a></span>
+                <span class="feed-date">12/12/2016</span>
+              </div>
+              <div class="feed-item">
+                <img class="feed-thumb" src="assets/images/flick14.jpg">
+                <div class="feed-likesAndViews">
+                  <span class="feed-likeCount">14<i class="fa fa-heart"></i></span>
+                  <span class="feed-viewCount"><i class="fa fa-eye"></i> 137</span>
+                </div>
+                <div class="feed-info">
+                  <div class="feed-inspect">
+                  </div>
+                  <div class="feed-specs">
+                    <div class="feed-title">
+                      Beatiful Girl
+                      <span class="feed-type"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+                      <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                    </div>
+                    <div class="feed-hashTags">
+                      <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                    </div>
+                    <div class="feed-locAndPrice">
+                      <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                      <span class="feed-price">$ 135.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article> --> 
+
+        </div> <!-- End feed-wrapper -->
+      </section> <!-- End Newsfeed -->
+     </main> <!-- end PageContent -->
+    <% include partials/footer %>
+    <% include partials/scripts %>
+  </body>
+</html>

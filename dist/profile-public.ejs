@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+    <% include partials/nav %>
+    <% include partials/actionbar %>
+    <main id="PageContent">
+    	<section id="ProfileBio" class="container-fluid">
+    		<div class="container">
+    			<div class="wrap-profile-img">
+    				<img src="assets/images/avatar2.jpg">
+    			</div>
+    			<div class="wrap-profile-info">
+    				<div class="wrap-profile-bio">
+    					<h1>Han Solo</h1>
+	    				<p class="if-subheader">Professional Photographer</p>
+	    				<p class="profile-bio">Lorem ipsum dolor sit amet, adipiscing risus qui ipsum enim voluptatibus. Est tempor, aptent libero cras hendrerit. Justo ut nihil in sit, sit augue ligula nullam suspendisse, in odio. Lorem faucibus massa nisl orci, tellus nunc sed vitae duis, dapibus feugiat.</p>
+    				 </div>
+    				 <div class="wrap-profile-statistics">
+    				 	<div class="profile-uploads">
+    				 		<h2>Most uploads on</h2>
+    				 		<p>
+    				 			<a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+    				 		</p>
+    				 	</div>
+    				 	<div class="profile-ratings">
+    				 		<h2>Rating (28)</h2>
+    				 		<div class="star-rating">
+						      <div class="star-rating__wrap">
+						        <input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+						        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+						        <input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+						        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+						        <input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+						        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+						        <input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+						        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+						        <input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+						        <label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+						      </div>
+						    </div>
+    				 	</div>
+    				 </div>
+    				<div class="wrap-profile-actions">
+    					<div class="profile-current-pos">
+	    					<h2>Nationality</h2>
+	    					<p>Rio, Brazil</p>
+	    					<h2>Current Location</h2>
+	    					<p>Copenhagen, Denmark</p>
+	    				</div>
+	    				<div class="profile-action-buttons">
+	    					<button type="button" class="btn btn-send-message">
+	    						<span class="addon-icon">
+					            	<i class="fa fa-comments if-awsome-icon" aria-hidden="true"></i>
+					            </span>
+					            <p>Contact Reporter</p>
+	    					</button>
+	    					<button type="button" class="btn btn-connect">
+	    						<span class="addon-icon">
+					            	<i class="fa fa-plus if-awsome-icon" aria-hidden="true"></i>
+					            </span>
+					            <p>Connect</p>
+	    					</button>
+	    				</div>
+	    			</div>
+    			</div>
+    		</div>
+    	</section>
+
+    	<!-- RELATED ITEMS -->
+        <aside id="RelatedFeeds" class="container-fluid">
+          <h2 style="text-align: center; font-size: 2.5em; padding: 4em 0 1em;">14 photos and videos have been uploaded by Han Solo</h2>
+          <% include partials/frontpage/isotype-userUploads %>
+        </aside>
+    </main> <!-- end PageContent -->
+    <% include partials/footer %>
+    <% include partials/scripts %>
+  </body>
+</html>

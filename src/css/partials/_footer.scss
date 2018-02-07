@@ -1,0 +1,97 @@
+/* STICKY FOOTER */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height*2;
+
+  @media(max-width: $screen-sm-min) {
+    margin-bottom: 0;
+  }
+}
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: $footer-height;
+  background-color: #000;
+  padding: 20px 0;
+}
+/* STICKY FOOTER ENDS */
+
+.page-footer a:hover, .page-footer a:active, .page-footer a:visited, .page-footer a:focus {
+  text-decoration: none;
+ }
+
+.page-footer{
+  height: $footer-height;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: $content-y-offset;
+
+  .container{
+    .footer-logo{
+      @include make-sm-column(2);
+      padding-top: 20px;
+    } 
+    .footer-nav{
+      @include make-sm-column(10);
+      color: #fff;
+
+      h3{
+        color: rgba(#fff, .6);
+        font-size: 1em; 
+        font-weight: 800;
+      }
+
+      .nav>li>a:focus, .nav>li>a:hover {
+        background-color: transparent;    
+      }
+
+    
+      ul {
+          list-style-type: none;
+          -webkit-margin-before: 0em;
+          -webkit-margin-after: 0em;
+          -webkit-padding-start: 0;
+
+        li{
+
+          a{
+            color: #fff;
+            padding-left: 0;
+            padding-right: 0;
+
+            &:hover { 
+              background-color: none;
+              color: $color-brand-primary;
+
+              .fa-linkedin, .fa-facebook, .fa-twitter, .fa-youtube{
+                color: #fff;
+              }
+            }
+          }
+          .fa-linkedin, .fa-facebook, .fa-twitter, .fa-youtube{
+            color: #000;
+            transition: 'color', .3s;
+          }
+        }
+      }
+      ul.navbar-social {
+        @include make-row();
+        li {
+
+          @include make-sm-column(3);
+        }
+        a {
+          padding-top: 0;
+        }
+      }
+    } 
+  }
+  
+} 

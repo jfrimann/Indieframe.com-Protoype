@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IndieFrame</title>
+<link href="assets/css/app.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top hidden-xs">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#lg-navigation" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="assets/images/logo-indieFrame.png" class="img-responsive"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="lg-navigation">
+      <ul class="nav navbar-nav navbar-left navbar-global">
+        <li><a href="create-account.html">Get the app</a></li>
+        <li class="divider-vertical hidden-xs"><span>&#124;</span></li>
+        <li><a href="#">How it works</a></li>
+        <li class="divider-vertical hidden-xs"><span>&#124;</span></li>
+        <li><a href="find-reporter.html">Find Reporter</a></li>
+        <li class="divider-vertical hidden-xs"><span>&#124;</span></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+
+      <!-- RIGHT ICON NAVBAR -->
+      <ul class="nav navbar-nav navbar-right navbar-icon">
+
+        <!-- SHOOPING CART -->
+        <li class="dropdown shopping-cart">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart" aria-hidden="true"><span class="cart-count">5</span></i></a>
+          <ul class="dropdown-menu shoppingCart-mega-menu cart-items">
+            <li>
+              <div class="if-mm-header">Your Cart <span class="item-count">(5)</span></div>
+              <div class="if-mm-column">
+                <div class="cart-item" onclick="window.location.href = 'feeditem.html';" onmouseover="$(this).css('cursor','pointer');">
+                  <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
+                  <div class="cart-item-info">
+                    <div class="cart-item-title">Stock Name</div>
+                    <div class="cart-item-stockNumber">12456</div>
+                  </div>
+                  <div class="cart-item-info">
+                    <div class="cart-item-price">$ 12,50</div>
+                    <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
+                  </div>
+                </div>
+                <div class="cart-item" onclick="window.location.href = 'feeditem.html';" onmouseover="$(this).css('cursor','pointer');">
+                  <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
+                  <div class="cart-item-info">
+                    <div class="cart-item-title">Stock Name</div>
+                    <div class="cart-item-stockNumber">12456</div>
+                  </div>
+                  <div class="cart-item-info">
+                    <div class="cart-item-price">$ 12,50</div>
+                    <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
+                  </div>
+                </div>
+                <div class="cart-item" onclick="window.location.href = 'feeditem.html';" onmouseover="$(this).css('cursor','pointer');">
+                  <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
+                  <div class="cart-item-info">
+                    <div class="cart-item-title">Stock Name</div>
+                    <div class="cart-item-stockNumber">12456</div>
+                  </div>
+                  <div class="cart-item-info">
+                    <div class="cart-item-price">$ 12,50</div>
+                    <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
+                  </div>
+                </div>
+                <div class="cart-item" onclick="window.location.href = 'feeditem.html';" onmouseover="$(this).css('cursor','pointer');">
+                  <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
+                  <div class="cart-item-info">
+                    <div class="cart-item-title">Stock Name</div>
+                    <div class="cart-item-stockNumber">12456</div>
+                  </div>
+                  <div class="cart-item-info">
+                    <div class="cart-item-price">$ 12,50</div>
+                    <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
+                  </div>
+                </div>
+                <div class="cart-item" onclick="window.location.href = 'feeditem.html';" onmouseover="$(this).css('cursor','pointer');">
+                  <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
+                  <div class="cart-item-info">
+                    <div class="cart-item-title">Stock Name</div>
+                    <div class="cart-item-stockNumber">12456</div>
+                  </div>
+                  <div class="cart-item-info">
+                    <div class="cart-item-price">$ 12,50</div>
+                    <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
+                  </div>
+                </div>
+                <div class="cart-item" onclick="window.location.href = 'feeditem.html';" onmouseover="$(this).css('cursor','pointer');">
+                  <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
+                  <div class="cart-item-info">
+                    <div class="cart-item-title">Stock Name</div>
+                    <div class="cart-item-stockNumber">12456</div>
+                  </div>
+                  <div class="cart-item-info">
+                    <div class="cart-item-price">$ 12,50</div>
+                    <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
+                  </div>
+                </div>
+                <div class="col-xs-12 cart-total">Total: $ 34,432.34</div>
+                <button type="button" class="btn btn-primary btn-lg btn-cart-checkout btn-block">Checkout</button>
+              </div>
+            </li>
+
+          </ul>
+        </li>
+        <li class="divider-vertical hidden-xs"><span>&#124;</span></li>
+
+        <!-- PROFILE -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i></a>
+          <ul class="dropdown-menu profile-mega-menu">
+            <li class="">
+                <div class="if-mm-header">Your Profile</div>
+                <div class="if-mm-column">
+                  <div class="if-mm-column-header-wrap">
+                    <button type="button" class="btn btn-lg btn-upload"onclick="window.location.href = 'upload.html';" onmouseover="$(this).css('background-color','#000');" onmouseout="$(this).css('background-color','#1395ba');">
+                      <span class="addon-icon">
+                        <i class="fa fa-cloud-upload if-awsome-icon" aria-hidden="true"></i>
+                      </span>
+                      Upload Media
+                    </button>
+                    <div class="if-mm-column-header">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                      <span>My Indieframe</span>
+                    </div>
+                  </div>
+                  <ul class="nav navbar if-mm-items">
+                    <li><a href="profile-public.html">
+                      <i class="fa fa-inbox" aria-hidden="true"></i>
+                      my content
+                    </a></li>
+                    <li><a href="profile-public.html">
+                      <i class="fa fa-line-chart" aria-hidden="true"></i>
+                      Statistics
+                    </a></li>
+                    <li><a href="profile-public.html">
+                      <i class="fa fa-comments" aria-hidden="true"></i>
+                      Messages
+                    </a></li>
+                    <li><a href="profile-public.html">
+                      <i class="fa fa-users" aria-hidden="true"></i>
+                      Connections
+                    </a></li>
+                  </ul>
+                </div>
+                <div class="if-mm-column border-middle">
+                  <div class="if-mm-column-header-wrap">
+                    <div class="if-mm-user-avatar">
+                      <img src="assets/images/avatar1.jpg" alt="User Name">
+                      <div class="if-mm-avatar-shortInfo">
+                        <div class="if-mm-avatar-name">
+                            User Name
+                        </div>
+                        <div class="if-mm-avatar-userType">
+                            Professional Photographer
+                        </div><a href="login-knownUser.html" class="if-mm-avatar-logout"><i class="fa fa-lock" aria-hidden="true"></i>Logout</a>
+                    </div>
+                    </div>
+                    <div class="if-mm-column-header">
+                      <i class="fa fa-cog" aria-hidden="true"></i>
+                      <span>Profile settings</span>
+                    </div>
+                  </div>
+                  <ul class="nav navbar if-mm-items">
+                    <li><a href="profile-private.html">Edit profile</a></li>
+                    <li><a href="profile-private.html">Change Password</a></li>
+                    <li><a href="profile-private.html">Geo Location</a></li>
+                    <li><a href="profile-private.html">Linked Accounts</a></li>
+                    <li><a href="profile-private.html">Payment and Purchase</a></li>
+                    <li><a href="profile-private.html">Payment receival</a></li>
+                    <li><a href="profile-private.html">Notifications</a></li>
+                    <li><a href="profile-private.html">Terms and conditions</a></li>
+                  </ul>
+                </div>
+            </li>
+          </ul>
+        </li>
+        <li class="divider-vertical hidden-xs"><span>&#124;</span></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></a>
+          <ul class="dropdown-menu">
+            <li><h3 style="padding: 0 1em;">Hidden pages</h3></li>
+            <li><a href="create-account.html">Create accout</a></li>
+            <li><a href="login-knownUser.html">Login Known User</a></li>
+            <li><a href="profile-public.html">Public Profile</a></li>
+            <li><a href="profile-private.html">Private Profile</a></li>
+            <li><a href="upload.html">Upload Media</a></li>
+            <li><a href="upload-addInfo.html">Add Media Info</a></li>
+            <li role="separator" class="divider"></li>
+            <li><h3 style="padding: 0 1em;">Hidden pages</h3></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<nav class="navbar navbar-fixed-top navbar-default navbar-mobile visible-xs">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#"><img class="img-responsive" src="assets/images/logo-indieFrame.png"></a>
+    <button type="button" class="navbar-toggle" onclick="toggleNavButtons()" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-collapse-group="togglableNav" data-canvas="body">
+      <i class="fa fa-bars" aria-hidden=true></i>
+    </button> 
+    <button type="button" class="navbar-toggle collapsed" onclick="toggleNavButtons()" data-toggle="collapse" data-target="#navbar-userprofile" data-collapse-group="togglableNav" aria-expanded="false">
+      <i class="fa fa-user" aria-hidden="true"></i>
+    </button>
+    <button type="button" class="navbar-toggle collapsed" onclick="toggleNavButtons()" data-toggle="collapse" data-target="#navbar-search" data-collapse-group="togglableNav" aria-expanded="false">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+    <button type="button" class="navbar-toggle collapsed shopping-cart" onclick="toggleNavButtons()" data-toggle="collapse" data-target="#navbar-shoppingcart" data-collapse-group="togglableNav" aria-expanded="false">
+      <i class="fa fa-shopping-cart" aria-hidden="true"><span class="cart-count">5</span></i>
+    </button> 
+  </div>
+
+  <!-- OFFCANVAS GLOBAL MENU -->
+  <div class="navbar-offcanvas offcanvas" id="navbar-global">
+    <a class="navmenu-brand center-text" href="#">
+      <img class="img-responsive center-block" src="assets/images/logo-indieFrame.png">
+      <p class="brand-tag text-center">Connecting you to the media</p>
+    </a>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Get the app</a></li>
+      <li><a href="#">How it works</a></li>
+      <li><a href="#">Find reporter</a></li>
+      <li class=""><a href="#">Support</a></li>
+      <li>
+        <div class="row social-buttons text-center">
+          <div class="col-xs-3 btn-social-wrap">
+            <a href="#" type="button" class="btn btn-primary btn-lg btn-social"><i class="fa fa-facebook"></i></a>
+          </div>
+          <div class="col-xs-3 btn-social-wrap">
+            <a href="#" type="button" class="btn btn-primary btn-lg btn-social"><i class="fa fa-google-plus"></i></a>
+          </div>
+          <div class="col-xs-3 btn-social-wrap">
+            <a href="#" type="button" class="btn btn-primary btn-lg btn-social"><i class="fa fa-twitter"></i></a>
+          </div>
+          <div class="col-xs-3 btn-social-wrap">
+            <a href="#" type="button" class="btn btn-primary btn-lg btn-social"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div> 
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">What we sell <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Illustrations</a></li>
+          <li><a href="#">Video</a></li>
+          <li><a href="#">Audio</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ways to pay <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Plans and pricing</a></li>
+          <li><a href="#">Corperate accounts</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Need help? <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li>
+            <address>
+              <strong>Phone support</strong><br>
+              <abbr title="Phone">Denmark:</abbr> +45 35412314<br>
+              <abbr title="Phone">Toll-free:</abbr> 00 800
+            </address>
+          </li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- OFFCANVAS GLOBAL MENU -->
+
+  <!-- COLLAPSE USER PROFILE -->
+  <div class="collapse navbar-collapse" id="navbar-userprofile">
+    <div class="container-uploadButton">
+      <button type="button" class="btn btn-lg btn-primary btn-block btn-upload">
+        <span class="addon-icon">
+          <i class="fa fa-cloud-upload if-awsome-icon" aria-hidden="true"></i>
+        </span>
+        Upload videos and photos
+      </button>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class=""><a href="#"><i class="fa fa-inbox mobile-menu-icon" aria-hidden="true"></i>My Content</a></li>
+      <li><a href="#"><i class="fa fa-line-chart mobile-menu-icon" aria-hidden="true"></i>Statistics</a></li>
+      <li><a href="#"><i class="fa fa-comments mobile-menu-icon" aria-hidden="true"></i>Messages</a></li>
+      <li><a href="#"><i class="fa fa-users mobile-menu-icon" aria-hidden="true"></i>Connections</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog mobile-menu-icon" aria-hidden="true"></i>Profile settings <i class="fa fa-plus if-caret" aria-hidden="true"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Edit Profile</a></li>
+          <li><a href="#">Change Password</a></li>
+          <li><a href="#">GEO Location</a></li>
+          <li><a href="#">Linked Accounts</a></li>
+          <li><a href="#">Payment and Purchase</a></li>
+          <li><a href="#">Payment Receival</a></li>
+          <li><a href="#">Notifications</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- END COLLAPSE USER PROFILE -->
+
+  <!-- COLLAPSE SEARCH -->
+  <div class="collapse navbar-collapse" id="navbar-search">
+    <form class="navbar-form navbar-left" role="search">
+        <input type="text" class="form-control" placeholder="Search videos or photos here">
+    </form>
+  </div><!-- END COLLAPSE SEARCH -->
+
+  <!-- COLLAPSE SHOPPING CART -->
+  <div class="collapse navbar-collapse" id="navbar-shoppingcart">
+    <ul class="nav navbar-nav shoppingCart-mobile cart-items">
+      <li>
+        <div class="cart-header">Your Cart <span class="item-count">(5)</span></div>
+          <div class="cart-item">
+            <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
+            <div class="cart-item-info">
+              <div class="cart-item-title">Stock Name</div>
+              <div class="cart-item-stockNumber">12456</div>
+            </div>
+            <div class="cart-item-info">
+              <div class="cart-item-price">$ 12,50</div>
+              <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
+            <div class="cart-item-info">
+              <div class="cart-item-title">Stock Name</div>
+              <div class="cart-item-stockNumber">12456</div>
+            </div>
+            <div class="cart-item-info">
+              <div class="cart-item-price">$ 12,50</div>
+              <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
+            <div class="cart-item-info">
+              <div class="cart-item-title">Stock Name</div>
+              <div class="cart-item-stockNumber">12456</div>
+            </div>
+            <div class="cart-item-info">
+              <div class="cart-item-price">$ 12,50</div>
+              <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
+            <div class="cart-item-info">
+              <div class="cart-item-title">Stock Name</div>
+              <div class="cart-item-stockNumber">12456</div>
+            </div>
+            <div class="cart-item-info">
+              <div class="cart-item-price">$ 12,50</div>
+              <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
+            <div class="cart-item-info">
+              <div class="cart-item-title">Stock Name</div>
+              <div class="cart-item-stockNumber">12456</div>
+            </div>
+            <div class="cart-item-info">
+              <div class="cart-item-price">$ 12,50</div>
+              <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
+            <div class="cart-item-info">
+              <div class="cart-item-title">Stock Name</div>
+              <div class="cart-item-stockNumber">12456</div>
+            </div>
+            <div class="cart-item-info">
+              <div class="cart-item-price">$ 12,50</div>
+              <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
+            </div>
+          </div>
+          <div class="col-xs-12 cart-total">Total: $ 34,432.34</div>
+          <button type="button" class="col-xs-12 btn btn-primary btn-lg btn-cart-checkout">Checkout</button>
+      </li>
+    </ul>
+    
+  </div><!-- END COLLAPSE SHOPPING CART -->
+</nav>
+
+    <section class="container-fluid actionBar hidden-xs">
+  <div class="container">
+    <div class="wrap-searchbar">
+      <div class="input-group">
+        <input type="text" class="form-control if-search" placeholder="Search real life video and photos...">
+        <div class="input-group-addon if-addon"><i class="fa fa-search fa-lg"></i></div>
+        <!--div class="input-group-btn">
+          <button type="button" class="btn btn-primary dropdown-toggle btn-filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-filter fa-2x" aria-hidden="true"></i><span class="caret"></span></button>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#">Item type</a></li>
+            <li><a href="#">Price</a></li>
+            <li><a href="#">Upload date</a></li>
+            <li><a href="#">Reporters</a></li>
+            <li><a href="#">Usage rights</a></li>
+          </ul>
+        </div--><!-- /btn-group -->
+      </div><!-- /input-group -->
+    </div>
+    <div class="wrap-uploadbutton">
+      <button class="btn btn-block btn-upload pull-right" onclick="window.location.href = 'upload.html';">
+        <span class="addon-icon">
+          <i class="fa fa-cloud-upload if-awsome-icon" aria-hidden="true"></i>
+        </span>
+        <p>Upload content</p>
+      </button>
+    </div>
+  </div>
+</section>
+
+    <main id="PageContent">
+      <div class="container">
+        <header>
+          <h1>Upload your photos and videos</h1>  
+        </header>
+
+        <section id="Dropzone" class="col-md-12">
+          <div class="dz-content">
+            <div class="icon-cloud-upload">
+              <i class="fa fa-cloud-upload fa-lg fa-5x" aria-hidden="true"></i>
+            </div>
+            <button type="button" class="btn btn-upload">
+              <span class="addon-icon">
+                <i class="fa fa-cloud-upload if-awsome-icon" aria-hidden="true"></i>
+              </span>
+              <p>Select files to upload</p>
+            </button>
+            <p class="if-subheader">Or drag'n'drop files here</p>
+          </div>
+        </section> <!-- Dropzone end -->
+        <section id="UploadProgress" class="col-md-12 uploads">
+          <div class="col-md-6 upload-item ui-left">
+            <div class="ui-box">
+              <div class="col-xs-5 ui-info">
+                <span class="ui-title">StockTitle_and_a_whole_log_more.jpg</span>
+              </div>
+              <div class="col-xs-6 ui-progress">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    60%
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 ui-close"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>        
+          <div class="col-md-6 upload-item ui-right">
+            <div class="ui-box">
+              <div class="col-xs-5 ui-info">
+                <span class="ui-title">StockTitle_and_a_whole_log_more.jpg</span>
+              </div>
+              <div class="col-xs-6 ui-progress">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    60%
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 ui-close"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="clearfix visible-md-block"></div>
+          <div class="col-md-6 upload-item ui-left">
+            <div class="ui-box">
+              <div class="col-xs-5 ui-info">
+                <span class="ui-title">StockTitle_and_a_whole_log_more.jpg</span>
+              </div>
+              <div class="col-xs-6 ui-progress">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    60%
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 ui-close"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>        
+          <div class="col-md-6 upload-item ui-right">
+            <div class="ui-box">
+              <div class="col-xs-5 ui-info">
+                <span class="ui-title">StockTitle_and_a_whole_log_more.jpg</span>
+              </div>
+              <div class="col-xs-6 ui-progress">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    60%
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 ui-close"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="clearfix visible-md-block"></div>
+          <div class="col-md-6 upload-item ui-left">
+            <div class="ui-box">
+              <div class="col-xs-5 ui-info done">
+                <span class="ui-title">StockTitle_and_a_whole_lot_more.jpg</span>
+              </div>
+              <div class="col-xs-2 ui-close pull-right"><i class="fa fa-check if-icon-success" aria-hidden="true"></i><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>        
+          <div class="col-md-6 upload-item ui-right">
+            <div class="ui-box">
+              <div class="col-xs-5 ui-info">
+                <span class="ui-title">StockTitle_and_a_whole_log_more.jpg</span>
+              </div>
+              <div class="col-xs-6 ui-progress">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    60%
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 ui-close"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="col-md-12 action-buttons">
+            <div class="col-md-4 col-md-offset-2">
+              <button type="button" class="btn btn-lg btn-block btn-tertiary">Add information to your items</button>
+            </div>
+            <div class="col-md-5">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Publish without adding information</button>
+            </div>
+          </div>
+        </section> <!-- end UploadProgress -->
+      </div> <!-- end container -->
+    </main> <!-- end PageContent -->
+    <footer class="container-fluid page-footer hidden-xs">
+	<div class="container">
+		<div class="footer-logo">
+			<img src="assets/images/logo-indieframe-simple.png">
+		</div>
+		<div class="footer-nav">
+			<div class="col-sm-3">
+				<h3>What we sell</h3>
+				<ul>
+					<li><a href="#">Photo</a></li>
+					<li><a href="#">Illustration</a></li>
+					<li><a href="#">Video</a></li>
+					<li><a href="#">Audio</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h3>Ways to pay</h3>
+				<ul>
+					<li><a href="#">Plans and pricing</a></li>
+					<li><a href="#">Corperate accounts</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h3>Need help?</h3>
+				<ul>
+					<li>Phone Support: +45 35412314</li>
+					<li>International toll-free: 00 800</li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<h3>Follow us</h3>
+				<ul class="nav navbar-nav navbar-social">
+					<li>
+						<a href="#">
+							<div class="fa-stack fa-lg">
+						  		<i class="fa fa-square fa-stack-2x"></i>
+						  		<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="fa-stack fa-lg">
+						  		<i class="fa fa-square fa-stack-2x"></i>
+						  		<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="fa-stack fa-lg">
+							  <i class="fa fa-square fa-stack-2x"></i>
+							  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="fa-stack fa-lg">
+							  <i class="fa fa-square fa-stack-2x"></i>
+							  <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+    <script src="assets/js/app.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+    <% include partials/nav %>
+    <% include partials/actionbar %>
+    <main id="PageContent">
+        <header class="header-wrap">
+            <a href="search-result.html">&#60;&#60; Back to search results</a>
+        </header>
+    	<article id="Feeditem" class="container-fluid">
+    		<section class="item-preview-wrap">
+    			<div class="item-preview-box">
+    				<div class="item-thumb" data-toggle="modal" data-target="#LargePreview">
+    					<img src="assets/images/flick15.jpg" alt="Item title">
+    				</div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="LargePreview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <img class="modal-image" src="assets/images/slider1.jpg" alt="Item title">
+                            </div>
+                        </div>
+                      </div>
+                    </div><!-- end Modal -->
+
+    				<div class="item-actions">
+                        <span class="social-buttons">
+                            <a class="social-facebook" href="#">
+                                <span class="fa-stack fa-lg">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a class="social-twitter"  href="#">
+                                <span class="fa-stack fa-lg">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a class="social-pinterest"  href="#">
+                                <span class="fa-stack fa-lg">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a class="social-google-plus"  href="#">
+                                <span class="fa-stack fa-lg">
+                                  <i class="fa fa-square fa-stack-2x"></i>
+                                  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </span>
+    					<span class="action-buttons">
+    						<button class="btn btn-primary btn-sm"><i class="fa fa-plus" aria-hidden="true"></i> Connect</button>
+    						<i class="fa fa-heart-o fa-lg btn-like" aria-hidden="true" onclick="likeItem();"></i>
+    					</span>
+    				</div>
+    			</div>
+    		</section>
+    		<section class="item-info-wrap-lg">
+    			<div class="item-info-box">
+    				<h2 class="item-title">Big city by night</h2>
+    				
+    				<div class="item-whenWhere"><span class="item-info-label">Taken: </span>12/12/2015, Copenhagen, Denmark</div>
+                    <div class="item-byWho">
+                        <span class="item-info-label">By: </span>
+                        <span class="feed-profile">
+                            <img class="img-profile" src="assets/images/avatar1.jpg" alt="Users name">
+                            <a href="profile-public.html"> Han Solo </a>/ Pro Photographer
+                        </span>
+                    </div>
+    				<div class="item-description"><span class="item-info-label">Description: </span>Lorem ipsum dolor sit amet, amet morbi. Dignissimos sit voluptatem wisi morbi libero. Quis et vel, duis in maecenas rhoncus nam vestibulum, aenean sed at est dolor erat, integer pellentesque quis donec congue sed, euismod ac. Nulla elementum consequat in varius voluptatem, fringilla vel etiam scelerisque suscipit. Tellus magnis est, quisque magna eget interdum.</div>
+    				<div class="item-tags"><span class="item-info-label">Keywords: </span><a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a></div>
+    				<div class="item-fileInfo"><span class="item-info-label">File info: </span>JPG size: 360 x 270 pixels</div>
+    			</div>
+    		</section>
+    		<section class="item-pricing-wrap">
+    			<div class="item-pricing-box">
+    				<h2 class="item-price-title">Buy Item<span class="price-tooltip"><a href="#" data-toggle="tooltip" title="" data-original-title="Here is some information about the different pricing scenarios."><i class="fa fa-question-circle" aria-hidden="true"></i></a></span></h2>
+    				<div class="price-options">
+                        <h4>Choose your audience</h4>
+    					<ul class="nav nav-pills">
+						  <li class="active"><a class="btn-default btn-sm" data-toggle="pill" href="#smallAudience">Small</a></li>
+						  <li><a class="btn-default btn-sm" data-toggle="pill" href="#medAudience">Medium</a></li>
+						  <li><a class="btn-default btn-sm" data-toggle="pill" href="#largeAudience">Large</a></li>
+						</ul>
+						<div class="tab-content">
+						  <div id="smallAudience" class="tab-pane fade in active">
+						    <p>Your publication will be seen by 1 - 10.000 viewers</p>
+						  </div>
+						  <div id="medAudience" class="tab-pane fade">
+						    <p>Your publication will be seen by 10.000 - 100.000 viewers</p>
+						  </div>
+						  <div id="largeAudience" class="tab-pane fade">
+						    <p>Your publication will be seen by + 100.000 viewers</p>
+						  </div>
+						</div>
+    				</div>
+    				<div class="item-price">$ 1.456</div>
+                    <p class="send-message"><a href="profile-public.html">Send a message</a> to Reporter if you need exclusive rights.</p>
+                    <button type="button" class="btn btn-primary btn-block btn-buy-item">
+                       <span class="addon-icon"><i class="fa fa-cart-plus"></i></span>
+                       Add to cart
+                    </button>
+    			</div>
+    		</section>
+    		<section class="item-info-wrap-md">
+    			<div class="item-info-box">
+    				<h2 class="item-title">Big city by night</h2>
+    				<div class="item-takenBy"><span class="item-info-label">By: </span><a href="profile-public.html">Han Solo</a>/Photographer</div>
+    				<div class="item-whenWhere"><span class="item-info-label">Taken: </span>12/12/2015, Copenhagen, Denmark</div>
+    				<div class="item-description"><span class="item-info-label">Description: </span>Lorem ipsum dolor sit amet, amet morbi. Dignissimos sit voluptatem wisi morbi libero. Quis et vel, duis in maecenas rhoncus nam vestibulum, aenean sed at est dolor erat, integer pellentesque quis donec congue sed, euismod ac. Nulla elementum consequat in varius voluptatem, fringilla vel etiam scelerisque suscipit. Tellus magnis est, quisque magna eget interdum.</div>
+    				<div class="item-tags"><span class="item-info-label">Keywords: </span><a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a></div>
+    				<div class="item-fileInfo"><span class="item-info-label">File info: </span>JPG size: 360 x 270 pixels</div>
+    			</div>
+    		</section>
+    	</article>
+
+        <!-- RELATED ITEMS -->
+        <aside id="RelatedFeeds" class="container-fluid">
+            <div class="related-feeds-wrap">
+                <h2>Related Items</h2>
+                
+                <div class="feed-wrapper ">
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar1.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick1.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">143<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 284</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Skyscraper from Below
+                              <span class="feed-type"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article> 
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar2.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick4.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">14<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 137</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Beatiful Girl
+                              <span class="feed-type"><i class="fa fa-camera-retro" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article> 
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar1.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick2.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">143<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 284</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Skyscraper from Below
+                              <span class="feed-type"><i class="fa fa-camera-retro" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article> 
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar2.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick5.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">14<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 137</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Beatiful Girl
+                              <span class="feed-type"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article> 
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar1.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick3.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">143<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 284</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Skyscraper from Below
+                              <span class="feed-type"><i class="fa fa-camera-retro" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article> 
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar2.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick6.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">14<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 137</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Beatiful Girl
+                              <span class="feed-type"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar1.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick7.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">143<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 284</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Skyscraper from Below
+                              <span class="feed-type"><i class="fa fa-camera-retro" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article> 
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar2.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick8.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">14<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 137</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Beatiful Girl
+                              <span class="feed-type"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article> 
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar1.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick9.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">143<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 284</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Skyscraper from Below
+                              <span class="feed-type"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article> 
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar2.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick10.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">14<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 137</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Beatiful Girl
+                              <span class="feed-type"><i class="fa fa-camera-retro" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article> 
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar1.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick11.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">143<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 284</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Skyscraper from Below
+                              <span class="feed-type"><i class="fa fa-camera-retro" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article> 
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar2.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick12.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">14<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 137</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Beatiful Girl
+                              <span class="feed-type"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar1.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick13.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">143<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 284</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Skyscraper from Below
+                              <span class="feed-type"><i class="fa fa-camera-retro" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article> 
+                  <article class="item">
+                    <div class="well">
+                      <div class="feed-header">
+                        <span class="feed-profile"><img class="img-profile" src="assets/images/avatar2.jpg" alt="Users name"><a href="profile-public.html">Jesper Frimann</a></span>
+                        <span class="feed-date">12/12/2016</span>
+                      </div>
+                      <div class="feed-item">
+                        <img class="feed-thumb" src="assets/images/flick14.jpg">
+                        <div class="feed-likesAndViews">
+                          <span class="feed-likeCount">14<i class="fa fa-heart"></i></span>
+                          <span class="feed-viewCount"><i class="fa fa-eye"></i> 137</span>
+                        </div>
+                        <div class="feed-info">
+                          <div class="feed-inspect">
+                          </div>
+                          <div class="feed-specs">
+                            <div class="feed-title">
+                              Beatiful Girl
+                              <span class="feed-type"><i class="fa fa-video-camera" aria-hidden="true"></i></span>
+                              <span class="feed-likes"><i class="fa fa-heart-o"></i></span>
+                            </div>
+                            <div class="feed-hashTags">
+                              <a class="feed-tag" href="search-result.html">building</a><a class="feed-tag" href="search-result.html">skyscraper</a><a class="feed-tag" href="search-result.html">bigcity</a>
+                            </div>
+                            <div class="feed-locAndPrice">
+                              <span class="feed-location"><i class="fa fa-map-marker"></i>Copenhagen, Denmark</span>
+                              <span class="feed-price">$ 135.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article> 
+                </div> <!-- End feed-wrapper -->
+            </div>
+        </aside>
+    </main> <!-- end PageContent -->
+    <% include partials/footer %>
+    <% include partials/scripts %>
+  </body>
+</html>

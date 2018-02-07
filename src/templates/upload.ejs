@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+    <% include partials/nav %>
+    <% include partials/actionbar %>
+    <main id="PageContent">
+      <div class="container">
+        <header>
+          <h1>Upload your photos and videos</h1>  
+        </header>
+
+        <section id="Dropzone" class="col-md-12">
+          <div class="dz-content">
+            <div class="icon-cloud-upload">
+              <i class="fa fa-cloud-upload fa-lg fa-5x" aria-hidden="true"></i>
+            </div>
+            <button type="button" class="btn btn-upload">
+              <span class="addon-icon">
+                <i class="fa fa-cloud-upload if-awsome-icon" aria-hidden="true"></i>
+              </span>
+              <p>Select files to upload</p>
+            </button>
+            <p class="if-subheader">Or drag'n'drop files here</p>
+          </div>
+        </section> <!-- Dropzone end -->
+        <section id="UploadProgress" class="col-md-12 uploads">
+          <div class="col-md-6 upload-item ui-left">
+            <div class="ui-box">
+              <div class="col-xs-5 ui-info">
+                <span class="ui-title">StockTitle_and_a_whole_log_more.jpg</span>
+              </div>
+              <div class="col-xs-6 ui-progress">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    60%
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 ui-close"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>        
+          <div class="col-md-6 upload-item ui-right">
+            <div class="ui-box">
+              <div class="col-xs-5 ui-info">
+                <span class="ui-title">StockTitle_and_a_whole_log_more.jpg</span>
+              </div>
+              <div class="col-xs-6 ui-progress">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    60%
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 ui-close"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="clearfix visible-md-block"></div>
+          <div class="col-md-6 upload-item ui-left">
+            <div class="ui-box">
+              <div class="col-xs-5 ui-info">
+                <span class="ui-title">StockTitle_and_a_whole_log_more.jpg</span>
+              </div>
+              <div class="col-xs-6 ui-progress">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    60%
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 ui-close"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>        
+          <div class="col-md-6 upload-item ui-right">
+            <div class="ui-box">
+              <div class="col-xs-5 ui-info">
+                <span class="ui-title">StockTitle_and_a_whole_log_more.jpg</span>
+              </div>
+              <div class="col-xs-6 ui-progress">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    60%
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 ui-close"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="clearfix visible-md-block"></div>
+          <div class="col-md-6 upload-item ui-left">
+            <div class="ui-box">
+              <div class="col-xs-5 ui-info done">
+                <span class="ui-title">StockTitle_and_a_whole_lot_more.jpg</span>
+              </div>
+              <div class="col-xs-2 ui-close pull-right"><i class="fa fa-check if-icon-success" aria-hidden="true"></i><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>        
+          <div class="col-md-6 upload-item ui-right">
+            <div class="ui-box">
+              <div class="col-xs-5 ui-info">
+                <span class="ui-title">StockTitle_and_a_whole_log_more.jpg</span>
+              </div>
+              <div class="col-xs-6 ui-progress">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    60%
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 ui-close"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="col-md-12 action-buttons">
+            <div class="col-md-4 col-md-offset-2">
+              <button type="button" class="btn btn-lg btn-block btn-tertiary">Add information to your items</button>
+            </div>
+            <div class="col-md-5">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Publish without adding information</button>
+            </div>
+          </div>
+        </section> <!-- end UploadProgress -->
+      </div> <!-- end container -->
+    </main> <!-- end PageContent -->
+    <% include partials/footer %>
+    <% include partials/scripts %>
+  </body>
+</html>

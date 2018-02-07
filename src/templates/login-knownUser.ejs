@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+    <% include partials/nav %>
+    <main id="PageContent" class="no-actionbar">
+        <div class="container">
+          <div class="if-wrap-form">
+            <div class="if-canvas-form">
+              <header>
+                <img src="assets/images/logo-indieframe.png">
+                <h1 class="text-center">Log in</h1>
+              </header> 
+                <div class="col-xs-6 col-xs-offset-3 profile-avatar-md">
+                  <img class="img-responsive center" src="assets/images/avatar1.jpg">
+                </div>
+                <form>
+                  <div class="form-group text-center">
+                      <button type="submit" class="btn btn-primary btn-lg btn-if-login">Log in as John Doe</button>
+                      Not John Doe? - <a href="login-switchUser.html">switch user</a>
+                  </div>
+                </form>
+            </div>    
+          </div>
+          <div class="if-wrap-getApp">
+            <div class="if-canvas-getApp">
+              <img src="assets/images/app-iphone.png" alt="Download our app and get the most out of indieFrame.">
+              <h2>Get the app</h2>
+              <p>Download our app and get the most out of indieFrame.</p>
+              <div class="row">
+                <div class="if-wrap-appBtn"><a href="#"><img class="pull-right" src="assets/images/btn-download-app-appstore.png"></a></div>
+                <div class="if-wrap-appBtn"><a href="#"><img src="assets/images/btn-download-app-google.png"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main> <!-- end PageContent -->
+    <% include partials/footer %>
+    <% include partials/scripts %>
+  </body>
+</html>
+
+

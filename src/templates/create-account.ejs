@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+    <% include partials/nav %>
+    <main id="PageContent" class="no-actionbar">
+        <div class="container">
+          <div class="if-wrap-form">
+            <div class="if-canvas-form">
+              <header>
+                <img src="assets/images/logo-indieframe.png">
+                <h1 class="text-center">Create your free account in secounds</h1>
+              </header> 
+              <button type="button" class="btn btn-primary btn-lg btn-signup-facebook">
+                <span class="addon-icon"><img src="assets/images/icons/btn-icon-facebook.png"></span>
+                Sign up with facebook
+              </button>
+              <span class="line-through">Or use email</span>
+              <form>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="inputConfirm" placeholder="Confirm Password">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-lg btn-if-login">Create my free account</button>
+                </div>
+              </form>
+            </div>    
+          </div>
+          <div class="if-wrap-getApp">
+            <div class="if-canvas-getApp">
+              <img src="assets/images/app-iphone.png" alt="Download our app and get the most out of indieFrame.">
+              <p>By signing up you agree to our <a href="#">Terms of use</a></p>
+              
+              <p>Have an account? <a href="login-knownUser.html">Log in</a></p>
+
+              
+              <p>Download our app and get the most out of indieFrame.</p>
+              <div class="row">
+                <div class="if-wrap-appBtn"><a href="#"><img class="pull-right" src="assets/images/btn-download-app-appstore.png"></a></div>
+                <div class="if-wrap-appBtn"><a href="#"><img src="assets/images/btn-download-app-google.png"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main> <!-- end PageContent -->
+    <% include partials/footer %>
+    <% include partials/scripts %>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+.grid-sizer,.grid-item { width: 20%; }
+.grid-item--width2 { width: 40%; }
+
+.grid-item {
+	display: inline-block;
+	padding:  .5em;
+	//width:  100%;
+	margin-bottom: $padding-small / 2;
+
+	@media (max-width: $screen-sm-min) {
+		margin-top: $padding-small *3;
+	}
+
+	@media only screen and (max-width:$screen-sm-min){
+				margin-top: 0;
+		}
+
+	.well {
+		position:relative;
+		display: block;
+		padding: 0;
+		margin-bottom: 0;
+		border: none;
+
+		.feed-header {
+			background-color: #fff;
+			padding: $padding-small/2 $padding-small;
+			width: 100%;
+			color: $color-brand-primary;
+			font-weight: 300;
+
+			.feed-profile {
+
+				img.img-profile {
+					width: 2em;
+					margin-right: $padding-small/2;
+					border-radius: 50%;
+				}
+			}
+			.feed-date {
+				float: right;
+				line-height: 2em;
+			}
+		}
+
+		.feed-item {
+			margin-left:0;
+			margin-right:0;
+			padding: 0;
+			position: relative;
+			display: block;
+			font-size: 1rem;
+			overflow: hidden;
+
+			.feed-likesAndViews {
+				position: absolute;
+				top: 0;
+				color: #fff;
+				padding: $padding-small/2 $padding-small;
+				width: 100%;
+
+				.feed-likeCount {
+					float: right;
+					text-shadow: 1px 1px 1.5px rgba(#000, .5);
+
+					i {
+						margin-left: $padding-small/3;
+
+						&.liked {
+							color: $color-brand-primary;
+							text-shadow: none;
+						}
+					}
+				}
+				.feed-viewCount {
+					text-shadow: 1px 1px 2px rgba(#000, .5);
+				}
+			}
+
+
+
+			img.feed-thumb {
+				width: 100%;
+			}
+
+			.feed-info {
+				position: absolute;
+				display: block;
+				width: 100%;
+				top: 0;
+				left: 0;
+				transition: top .3s;
+
+				.feed-inspect {
+					width: 100%;
+					background-color: rgba(#fff, 0);
+					font-size: 1.3em;
+					text-align: center;
+					cursor: pointer;
+
+					&:before {
+						content: '';
+						display: inline-block;
+						height: 100%;
+						vertical-align: middle;
+					}
+					span {
+						font-size: .1em;
+						display: inline-block;
+						vertical-align: middle;
+						margin: 0 $padding-small/2;
+						color: $color-brand-primary;
+					}
+				}
+
+				.feed-header {
+					background-color: rgba(#fff, .9);
+					padding: $padding-small/2 $padding-small;
+					width: 100%;
+					color: $color-brand-primary;
+					font-weight: 300;
+
+					.feed-profile {
+
+						img.img-profile {
+							width: 1.5em;
+							margin-right: $padding-small/2;
+							border-radius: 50%;
+						}
+					}
+					.feed-date {
+						float: right;
+					}
+				}
+
+				.feed-specs {
+					width: 100%;
+					background-color: rgba(#fff, .9);
+					color: $text-color;
+					font-weight: 300;
+					padding: $padding-small;
+					padding-bottom: 0;
+
+					.feed-title {
+						font-size: 1em;
+
+						@include clearfix();
+						line-height: 1.2em;
+
+						.feed-type {
+							font-size: 1.2em;
+							line-height: 0em;
+							float: left;
+							margin-right: $padding-small/2;
+
+						}
+						.feed-likes {
+							float: right;
+							cursor: pointer;
+
+							i {
+								color: $color-brand-primary;
+
+								@media(max-width: $screen-md-min) {
+									font-size: 1.5em;
+									line-height: .5em;
+								}
+
+								&.liked {
+									color: $color-brand-primary;
+								}
+							}
+						}
+					}
+					.feed-hashTags {
+						border-bottom: 1px solid rgba($gray, .3);
+						padding-bottom: $padding-small/2;
+						padding-top: $padding-small/4;
+					}
+					.feed-locAndPrice {
+						padding: $padding-small/2 0 $padding-small 0;
+
+						.feed-location {
+
+							i {
+								margin-right: $padding-small/2;
+								font-size: 1.2em;
+								color: $color-brand-primary;
+							}
+						}
+						.feed-price {
+							color: $color-brand-primary;
+							float: right;
+							font-size: 1em;
+							font-weight: 700;
+							line-height: 1em;
+						}
+					}
+					.feed-seperator {
+						height: $padding-small;
+						margin-top: $padding-small;
+						border-top: 1px solid $gray-light;
+					}
+				}
+			}
+		}
+	}
+}
+
+.button-group.filters-button-group{
+	text-align: center;
+	padding: 0 0 3em;
+
+	h2{
+		font-size: 2.5em;
+		margin-bottom: 1em;
+	}
+	button.button {
+	    width: 20%;
+			max-width: 280px;
+	    margin: .3%;
+	    background: #000;
+	    color: #fff;
+	    text-transform: uppercase;
+	    padding: 1em;
+	    border: none;
+			transition: background-color .3s;
+	}
+	.button:hover {
+		background: $brand-primary;
+	}
+	.button.is-checked {
+	  background: $brand-primary;
+	}
+}
+
+// .button:hover {
+//   background-color: #8CF;
+//   text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+//   color: #222;
+// }
+//
+// .button:active,
+// .button.is-checked {
+//   background-color: #28F;
+// }
+//
+// .button.is-checked {
+//   color: white;
+//   text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+// }
+//
+// .button:active {
+//   box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+// }

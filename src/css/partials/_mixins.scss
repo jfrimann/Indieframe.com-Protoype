@@ -1,0 +1,177 @@
+// retina.sass
+// A helper mixin for applying high-resolution background images (http://www.retinajs.com)
+
+// Submitted by Nathan Crank
+// nathancrank.com
+
+@mixin at2x($path, $ext: "jpg", $w: auto, $h: auto) {
+  $at1x_path: "#{$path}.#{$ext}";
+  $at2x_path: "#{$path}@2x.#{$ext}";
+
+  background-image: url("#{$at1x_path}");
+
+  @media all and (-webkit-min-device-pixel-ratio : 1.5),
+         all and (-o-min-device-pixel-ratio: 3/2),
+         all and (min--moz-device-pixel-ratio: 1.5),
+         all and (min-device-pixel-ratio: 1.5) {
+           background-image: url("#{$at2x_path}");
+           background-size: $w $h;
+  }
+}
+
+@mixin bg-fullHeight($image:none) {
+	background: url($image);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: -webkit-calc(100vh - #{$content-y-offset});
+  height: -moz-calc(100vh - #{$content-y-offset});
+  height: calc(100vh - #{$content-y-offset});
+
+  @media (max-width: $screen-sm-min) {
+    height: -webkit-calc(100vh - #{$navbar-height-mobile});
+    height: -moz-calc(100vh - #{$navbar-height-mobile});
+    height: calc(100vh - #{$navbar-height-mobile});
+  }
+}
+
+@mixin btn-if-icon($bg-color: $color-brand-primary) {
+  @include button-variant(#fff, $bg-color, rgba(250, 250, 250, 0));
+  padding: 0 2rem 0 0; 
+  height: $searchbar-height;
+  line-height: 3.4rem;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+
+  .addon-icon {
+    border-right: 1px solid white;
+    margin-right: 1rem;
+    float: left;
+    height: $searchbar-height;
+    width: $searchbar-height + 2px;
+      
+      i.if-awsome-icon {
+        font-size: 2em;
+        line-height: 1.8;
+      }
+  }
+}
+
+@mixin if-canvas() {
+  background-color: #fff;
+  padding: $page-padding-vertical;
+  margin-bottom: $page-padding-vertical;
+
+  @media (max-width: $screen-sm-min) {
+    margin-bottom: $page-padding-vertical/2;
+  }
+}
+
+@mixin if-wrap($col, $res) {
+  @if $res == 'lg' {
+    @include make-lg-column($col);
+  }
+  @else if $res == 'md' {
+    @include make-md-column($col);
+  }
+  @else if $res == 'sm' {
+    @include make-sm-column($col);
+  }
+  @else if $res == 'xs' {
+    @include make-xs-column($col);
+  }
+  @else {
+
+  }
+}
+
+@mixin if-container() {
+  @media(max-width: $screen-sm-min){
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+
+@mixin remove-horizontal-padding-sx() {
+  @media (max-width: $screen-sm-min) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@mixin if-mega-menu($columns: 1) {
+  $column-size: 12 / $columns;
+  $mm-width: 300px * $columns;
+
+  //@media (min-width: $screen-sm-min) {
+    width: $mm-width;
+    padding: 0;
+    border: none; 
+    
+    .if-mm-header {
+        @include make-xs-column(12);
+        height: $searchbar-height;
+        padding: $searchbar-height/2-10px 0;
+        background-color: $color-brand-primary;
+        color: #fff;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+        @include clearfix();
+    } 
+    .border-middle {
+        border-left: 1px solid $gray-lighter;
+    }
+    .if-mm-column {
+        @include make-xs-column($column-size);
+        padding: .5em 1em;
+
+        .if-mm-column-header-wrap{
+            height: 110px;
+            border-bottom: 1px solid $gray-lighter;
+            padding: 0 0 2em 0;
+            margin-bottom: 1em;
+
+            .if-mm-column-header {
+                @include clearfix();
+                margin-top: 1em;
+                i {
+                    font-size: 2em;
+                    margin-right: .1em;
+                }
+                span {
+                    font-weight: 900;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .if-mm-items{
+            margin: 0;
+            border: none;
+            box-shadow: none;
+
+            li {
+                a {
+                    color: $color-text;
+                    text-transform: uppercase;
+                    transition: background-color .5s;
+                    &:hover {
+                        color: $color-brand-primary;
+                    }
+
+                    i {
+                        font-size: 1.2em;
+                        color: $color-brand-primary;
+                        width: 2em;
+                    }
+                }
+            }
+        }
+    }  
+}
+
+  

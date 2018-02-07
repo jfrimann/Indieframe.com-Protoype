@@ -1,0 +1,103 @@
+#ProfileBio {
+	@include if-container();
+	padding: $page-padding-vertical 0;
+	background-color: #fff;
+	
+	.container {
+		@include if-container();
+
+		.wrap-profile-img {
+			@include make-sm-column(3);
+			@media(max-width: $screen-sm-min) {
+				padding: 0;
+			}
+			img {
+				@include img-responsive();
+				width: 100%;
+				border-radius: 50%;
+
+				@media(max-width: $screen-sm-min) {
+					border-radius: 0;
+				}
+
+			}
+		}
+		.wrap-profile-info {
+			@include make-sm-column(9);
+
+			.wrap-profile-statistics, .wrap-profile-actions {
+				@include make-row();
+
+				.profile-uploads, .profile-current-pos {
+					@include make-md-column(4);
+					@include make-sm-column(6);
+
+					
+				}
+				.profile-action-buttons {
+					padding-top: $padding-small*2;
+				}
+				.profile-ratings, .profile-action-buttons {
+					@include make-md-column(8);
+					@include make-sm-column(6);
+					.wrap-profile-button {
+						@include make-xs-column(6);
+					}
+
+					.btn-send-message, .btn-connect {
+						width: 49%;
+						@include btn-if-icon();
+
+						@media(max-width: $screen-lg-min) {
+							width: 100%;
+							@include clearfix();
+						}
+					}
+				}
+				.profile-ratings {
+					.star-rating{
+						font-size: 0;
+					}
+					.star-rating__wrap{
+						display: inline-block;
+						font-size: 1rem;
+					}
+					.star-rating__wrap:after{
+						content: "";
+						display: table;
+						clear: both;
+					}
+					.star-rating__ico{
+						float: right;
+						padding-left: 2px;
+						cursor: pointer;
+						color: #FFB300;
+					}
+					.star-rating__ico:last-child{
+						padding-left: 0;
+					}
+					.star-rating__input{
+						display: none;
+					}
+					.star-rating__ico:hover:before,
+					.star-rating__ico:hover ~ .star-rating__ico:before,
+					.star-rating__input:checked ~ .star-rating__ico:before
+					{
+						content: "\f005";
+					}
+				}
+			}
+		}
+	}
+}
+#RelatedFeeds {
+	h2 {
+		border-top: none;
+	}
+
+	.feed-filters li{
+		@media(max-width: $screen-sm-min) {
+			margin-right: $padding-small/4;
+		}
+	}
+}

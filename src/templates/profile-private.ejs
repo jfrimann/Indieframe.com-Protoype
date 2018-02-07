@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html class="admin-profile" lang="en">
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+    <% include partials/nav %>
+    <main id="PageContent" class="no-actionbar-fluid">
+      <div class="container-fluid">
+        <div class="if-row">
+          <div class="admin-nav">
+            <div class="if-row">
+              <nav>
+                <ul>
+                  <li><a href="/profile/media" title="media"><span class="tool-icon"><i class="fa fa-picture-o" aria-hidden="true"></i></span><span class="tool-label">Uploads</span></a></li>
+                  <li><a href="/profile/inventory" title="inventory"><span class="tool-icon"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span><span class="tool-label">Inventory</span></a></li>
+                  <li><a href="/profile/messages" title="messages"><span class="tool-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="tool-label">Messages</span></a></li>
+                  <li class="active"><a href="/profile/edit" title="edit"><span class="tool-icon"><i class="fa fa-user" aria-hidden="true"></i></span><span class="tool-label">Edit profile</span></a></li>
+                  <li><a href="/profile/settings" title="settings"><span class="tool-icon"><i class="fa fa-gear" aria-hidden="true"></i></span><span class="tool-label">Settings</span></a></li>
+                  <li><a href="/profile/terms" title="terms"><span class="tool-icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></span><span class="tool-label">Terms and conditions</span></a></li>
+                </ul>
+              </nav>
+            </div> <!-- end row -->
+          </div> <!-- end admin-nav -->
+        </div> <!-- end row -->
+      </div> <!-- end container-fluid -->
+    </main> <!-- end PageContent -->
+    <% include partials/footer %>
+    <% include partials/scripts %>
+  </body>
+</html>

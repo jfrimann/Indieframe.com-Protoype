@@ -1,0 +1,187 @@
+nav.navbar {
+    background-color: #fff;
+    border: none;
+    height: $navbar-height;
+}
+.navbar-icon {
+    li.dropdown {
+        a.dropdown-toggle {
+            min-width: 60px;
+            text-align: center;
+            font-size: 1.3em;
+        }
+    }
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background-color: $color-brand-primary;
+    color: #fff;
+    .cart-count {
+        background-color: #000;
+    }
+}
+.navbar {
+    box-shadow: 0px 1px 10px rgba(0,0,0,.05);
+}
+.navbar-brand {
+    padding: 5px 0;
+    margin-right: 2em;
+
+    img {
+        @media(min-width: $screen-sm-min) {
+            max-height: 40px;            
+        }
+    }
+    @media(max-width: $screen-sm-min) {
+        margin-right: 0;
+    }
+}
+li.divider-vertical, span.divider-vertical {
+    height: $navbar-height;
+    display: table;
+    position: relative;
+
+    span {
+        display: table-cell;
+        vertical-align: middle;
+        max-width: 1px;
+    }
+}
+
+.navbar-icon {
+
+/* IF-MEGA MENU */
+.profile-mega-menu {
+    @include if-mega-menu(2);
+
+    .if-mm-user-avatar {
+        @include clearfix();
+        display: inline-block;
+        height: $searchbar-height;
+        margin-bottom: .8em;
+
+
+        img {
+            height: $searchbar-height;
+            border-radius: 50%;
+            float: left;
+        }
+
+        .if-mm-avatar-shortInfo {
+            float: left;
+            margin-left: 1.5em;
+
+            .if-mm-avatar-name {
+                text-transform: uppercase;
+            }
+            .if-mm-avatar-userType {
+                font-weight: 100;
+                font-size: .8em;
+                line-height: .8em;
+            }
+            a.if-mm-avatar-logout {
+                font-size: .8em;
+                text-transform: uppercase;
+                line-height: 2.5em;
+
+                i {
+                    margin-right: .5em;
+                }
+            }
+        }
+    }
+}
+
+
+/*Navbar global*/
+ul.navbar-global{
+    padding-left: 2rem;
+
+    li{
+        a{
+            text-transform: uppercase;
+                padding-left: 5px;
+                padding-right: 5px;
+        }
+    }
+}
+
+/*Shopping cart*/
+span.cart-count {
+    position: relative;
+    top: -1em;
+    right: .5em;
+    font-family: sans-serif;
+    font-size: .6em;
+    font-weight: 900;
+    color: #fff;
+    padding: .2em .5em;
+    background-color: $color-brand-primary;
+    border-radius: 50%;
+}
+ul.cart-items.shoppingCart-mega-menu {
+    @include if-mega-menu();
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    
+    .cart-item{
+        @include make-row();
+
+        padding: .5em 1em;
+        border-bottom: 1px solid $gray-lighter;
+
+        &:hover {
+            background-color: $gray-lighter;
+        }
+        
+        .cart-item-info {
+            @include make-xs-column(4);
+            padding: 0 .2em;
+            display: table-cell;
+
+            .cart-item-title, .cart-item-stockNumber {
+                font-size: .8em;
+            }
+            .cart-item-price {
+                text-align: right;
+                font-weight: 800;
+            }
+            button.cart-item-delete {
+                position: relative;
+                bottom: -10px;
+                font-size: 1em;
+            }
+
+        }
+    }
+
+        .cart-total{
+            text-align: right;
+            padding: .5em 0;
+            font-weight: 800;
+        }
+        .btn-cart-checkout {
+            margin: .5em 0;
+            border-radius: 0;
+        }
+    
+}
+
+li.shopping-cart{
+    
+    a{
+        span.cart-count {
+            position: relative;
+            top: -1em;
+            right: .5em;
+            font-family: sans-serif;
+            font-size: .6em;
+            font-weight: 900;
+            color: #fff;
+            padding: .2em .5em;
+            background-color: $color-brand-primary;
+            border-radius: 50%;
+        }
+    }
+}
+}
+

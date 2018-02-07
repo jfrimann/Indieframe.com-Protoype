@@ -1,0 +1,10 @@
+@mixin nf-item() {
+	background-color: $gray-lighter;
+	position:relative;
+	display: block;
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	margin-bottom: 0;
+	padding: 0;
+}

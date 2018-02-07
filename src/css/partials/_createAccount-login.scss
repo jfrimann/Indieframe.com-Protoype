@@ -1,0 +1,51 @@
+
+button.btn-signup-facebook {
+	@include center-block();
+	@include btn-if-icon($color-facebook);
+}
+
+button.btn-if-login {
+	@include center-block();
+	margin-top: $page-padding-vertical !important;
+}
+
+.if-wrap-form, .if-wrap-getApp {
+	@include if-wrap(6, 'sm');
+	@media (max-width: $screen-sm-min) {
+	    padding-left: 0;
+	    padding-right: 0;
+	  }
+}
+
+.if-canvas-form {
+	img {
+		@include img-responsive();
+		@include center-block();
+	}
+}
+
+.if-canvas-form, .if-canvas-terms, .if-canvas-getApp {
+	@include if-wrap(12, 'xs');
+	@include if-canvas();
+}
+
+.if-canvas-getApp {
+	text-align: center;
+
+	img {
+		@include center-block();
+		@include img-responsive();
+		margin-bottom: $page-padding-vertical;
+	}
+	h2 {
+		margin-top: $page-padding-vertical;
+	}
+}
+
+.if-wrap-appBtn {
+	@include make-xs-column(6);
+
+	img {
+		@include img-responsive();
+	}
+}
