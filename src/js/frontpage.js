@@ -9,13 +9,13 @@ $(document).ready(function() {
 		$('#Newsfeed .feed-wrapper').css('padding', 0);
 		layoutMobile();
 		addMouseBehavior();
-		
-		
+
+
 	}else {
 		//Setup on desktop devices
 		layoutDesktop();
 		addMouseBehavior();
-		
+
 		$(window).resize(function() {
 			layoutDesktop();
 		});
@@ -24,19 +24,39 @@ $(document).ready(function() {
 
 function layoutDesktop() {
 
-	$('.feed-item').find('.feed-thumb').one('load', function() {
+	$('.feed-item > .feed-thumb').imagesLoaded().progress( function( instance, image ) {
+    var result = image.isLoaded ? 'loaded' : 'broken';
+		var $img = $(image.img);
+		var $parent = $($img.parent());
 
-		var imgHeight = $(this).outerHeight();
+		var imgHeight = $img.outerHeight();
 		var headerHeight = 0;
-		var specsHeight = $('.feed-specs').outerHeight();
+		var specsHeight = $parent.find($('.feed-specs')).outerHeight();
 		var inspectHeight = imgHeight - (headerHeight + specsHeight);
 
-	    $(this).parent().find('.feed-inspect').css('height', inspectHeight);
-	    $(this).parent().find('.feed-info').css('top', imgHeight);
+		$parent.find('.feed-inspect').css('height', inspectHeight);
+	  $parent.find('.feed-info').css('top', imgHeight);
+    //console.log( 'image is ' + result + ' for ' + image.img.src );
+		//console.log('image: ' + $img.outerHeight() + ' || item: ' + $parent.outerHeight());
+		$grid.isotope('layout');
+  });
 
-	}).each(function() {
-		if(this.complete) $(this).load();
-	})
+	// $('.feed-item').find('.feed-thumb').one('load', function() {
+  //
+	// 	var imgHeight = $(this).outerHeight();
+	// 	var headerHeight = 0;
+	// 	var specsHeight = $('.feed-specs').outerHeight();
+	// 	var inspectHeight = imgHeight - (headerHeight + specsHeight);
+  //
+  //
+	//   $(this).parent().find('.feed-inspect').css('height', inspectHeight);
+	//   $(this).parent().find('.feed-info').css('top', imgHeight);
+  //
+	// }).each(function() {
+	// 	if(this.complete) $(this).load();
+	// 	//console.log($(this).attr('class'));
+	// 	//imgHeight = $(this).outerHeight();
+	// })
 }
 
 function layoutMobile() {
@@ -81,16 +101,16 @@ function addMouseBehavior () {
 		$('.feed-thumb').each(function(i,obj) {
 			$(this).on('mouseover', function() {
 		    	clearMouseOver();
-		    	$(this).parent().find('.feed-info').css('top', 0);		    	
+		    	$(this).parent().find('.feed-info').css('top', 0);
 		    })
 		    $(this).parent().find('.feed-info').mouseleave(function() {
 		    	var imgHeight = $(this).outerHeight();
 		    	clearMouseOver();
-				$(this).parent().find('.feed-info').css('top', imgHeight);		    	
+				$(this).parent().find('.feed-info').css('top', imgHeight);
 		    })
-		    
+
 			$(this).parent().find('.feed-info > .feed-specs > .feed-title > .feed-likes').click(function() {
-				addLike($(this));	
+				addLike($(this));
 			})
 
 			$(this).parent().find('.feed-inspect').click(function() {
@@ -98,14 +118,14 @@ function addMouseBehavior () {
 			})
 		})
 	}
-	
+
 }
 
 function addLike(obj) {
 	if($(obj).parent().find('.feed-likes > i').hasClass('fa-heart-o')) {
 		var target = $(obj).parent().parent().parent().find('.feed-inspect');
 		target.append('<span class="btn-like"><i class="fa fa-heart"></i></span>');
-		
+
 		$(target).find('.btn-like i').animate({
 			zoom: 50
 		}, {

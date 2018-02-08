@@ -6,6 +6,7 @@
 //= require ../vendor/retinajs/dist/retina.js
 //= require ../vendor/jasny-bootstrap/js/jasny-bootstrap.js
 //= require ../../node_modules/isotope-layout/dist/isotope.pkgd.min.js
+//= require ../../node_modules/imagesloaded/imagesloaded.pkgd.min.js
 //= require partials/toggle-collapse.js
 //= require partials/nav-mobile.js
 //= require frontpage.js

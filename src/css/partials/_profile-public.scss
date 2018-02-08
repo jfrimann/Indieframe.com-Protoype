@@ -2,7 +2,7 @@
 	@include if-container();
 	padding: $page-padding-vertical 0;
 	background-color: #fff;
-	
+
 	.container {
 		@include if-container();
 
@@ -32,7 +32,7 @@
 					@include make-md-column(4);
 					@include make-sm-column(6);
 
-					
+
 				}
 				.profile-action-buttons {
 					padding-top: $padding-small*2;
@@ -93,7 +93,14 @@
 #RelatedFeeds {
 	h2 {
 		border-top: none;
+
+		@media(max-width: $screen-sm-min) {
+			font-size: 1.5em !important;
+    	padding: 0 !important;
+		}
 	}
+
+
 
 	.feed-filters li{
 		@media(max-width: $screen-sm-min) {

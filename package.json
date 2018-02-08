@@ -30,6 +30,7 @@
     "sprity-sass": "^1.0.4"
   },
   "dependencies": {
+    "imagesloaded": "^4.1.4",
     "isotope-layout": "^3.0.5"
   }
 }

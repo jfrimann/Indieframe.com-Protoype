@@ -1,0 +1,34 @@
+.team-profile-img {
+  @include make-sm-column(4);
+  text-align: center;
+  margin: 1em 0 3em 0;
+
+  @media(max-width: $screen-sm-min) {
+    padding: 0;
+  }
+  img {
+    @include img-responsive();
+    width: 100%;
+    border-radius: 50%;
+    padding: 2em;
+
+    @media(max-width: $screen-sm-min) {
+      border-radius: 0;
+    }
+
+  }
+  .if-team-name {
+    font-size: 2em;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: $brand-primary;
+  }
+
+  .if-team-title {
+    color: $gray;
+  }
+}
+
+#accordion {
+  margin-top: 1.5em;
+}

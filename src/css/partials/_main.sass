@@ -5,20 +5,20 @@ html, body
   color: $color-text
   -webkit-font-smoothing: antialiased
 
-  
+
 
   header
     margin-bottom: $page-padding-vertical
 
   h2, h3
     color: #000
-  
 
-  h1 
+
+  h1
     color: $color-brand-primary
     font-weight: 100
     font-size: 2rem
-    text-transform: uppercase 
+    text-transform: uppercase
     margin-bottom: 0
 
   h2, .h2, .if-subheader
@@ -26,21 +26,31 @@ html, body
     font-weight: 100
     text-transform: uppercase
 
+  .if-manchet
+    font-size: 1.3rem
+    font-weight: 100
+    //text-transform: uppercase
+    padding-top: 1.5em
+    color: $gray
+
   h3
     font-size: 1rem
     font-weight: 800
     text-transform: uppercase
 
+  p
+    padding: .5em 0
+
   a
     color: $color-brand-primary
     transition: color .3s
-  a:hover 
+  a:hover
     color: darken($color-brand-primary, 20%)
 
   input:not([type=checkbox]), textarea, select
     -webkit-appearance: none
 
-/***********************************/ 
+/***********************************/
 /* Bootstrap overwrites and addons */
 /***********************************/
 .btn
@@ -58,12 +68,12 @@ html, body
   border: none
   transition: background-color .3s
 
-  &:hover 
+  &:hover
     color: #fff
     background-color: #000
 
-.btn-primary 
-  //border: none 
+.btn-primary
+  //border: none
 
   &:hover
     background-color: #000
@@ -83,22 +93,36 @@ html, body
   outline: 0
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(229,0,71,.6)
 
-.pagination 
+.pagination
   li
     a
-      color: #000      
+      color: #000
 
     a:hover
       background-color: $gray-lighter
       //border-color: $gray-lighter
       color: $color-brand-primary
 
+.panel-group .panel
+  border: none
   
-/*******************/ 
+.panel-default .panel-heading
+  color: #fff
+  background-color: #000
+  border-color: none
+
+  .panel-title>a
+    color: #ffffff
+    font-weight: 400
+    text-decoration: none
+
+  .panel-title>a:hover, .panel-title>a:active
+    color: #999 !important
+
 /* Generic classes */
 /*******************/
 //Container for all page content exept header and footer
-#PageContent 
+#PageContent
   position: relative
   top: $content-y-offset
   //padding-bottom: $page-padding-vertical *2
@@ -117,7 +141,7 @@ html, body
   @include make-row()
 
   // Creates a line through the element with transpancy over the element
-.line-through 
+.line-through
   display: table
   white-space: nowrap
   padding: $page-padding-vertical .5rem
@@ -126,17 +150,17 @@ html, body
   text-transform: uppercase
   color: #000
 
-  &:before, &:after 
+  &:before, &:after
     border-top: 1px solid $gray
     content: ''
     display: table-cell
     position: relative
     top: 0.6em
     width: 45%
-  
+
   &:before
     right: 1.5%
-  &:after 
+  &:after
     left: 1.5%
 
 .profile-avatar-md
@@ -148,12 +172,12 @@ html, body
 .center
   margin: 0 auto
 
-.if-icon-success 
+.if-icon-success
   color: $color-success
 
-.btn-tertiary 
+.btn-tertiary
   @include button-variant(#fff, $color-brand-tertiary, rgba(250,250,250,0))
-  
+
 .btn-tertiary:hover
   background-color: darken($color-brand-tertiary, 10%)
 
@@ -170,14 +194,14 @@ html, body
 .feed-tag
   margin-right: $padding-small/3
 
-  &:before 
+  &:before
     content: '#'
     margin-right: .05em
     color: $color-brand-primary
-  
 
 
-/*****************/ 
+
+/*****************/
 /* Media Queries */
 /*****************/
 @media (max-width: $screen-sm-min)
@@ -195,11 +219,3 @@ html, body
 
 @media (min-width: $screen-lg-min)
   font-size: $font-size-lg
-
-
-
-
-
-
-
-
