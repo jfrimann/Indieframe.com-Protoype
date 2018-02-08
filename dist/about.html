@@ -217,10 +217,10 @@
 </nav>
 <nav class="navbar navbar-fixed-top navbar-default navbar-mobile visible-xs">
   <div class="navbar-header">
-    <a class="navbar-brand" href="#"><img class="img-responsive" src="assets/images/logo-indieFrame.png"></a>
+    <a class="navbar-brand" href="#"><img class="img-responsive" src="assets/images/logo-indieframe.png"></a>
     <button type="button" class="navbar-toggle" onclick="toggleNavButtons()" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-collapse-group="togglableNav" data-canvas="body">
       <i class="fa fa-bars" aria-hidden=true></i>
-    </button> 
+    </button>
     <button type="button" class="navbar-toggle collapsed" onclick="toggleNavButtons()" data-toggle="collapse" data-target="#navbar-userprofile" data-collapse-group="togglableNav" aria-expanded="false">
       <i class="fa fa-user" aria-hidden="true"></i>
     </button>
@@ -229,20 +229,20 @@
     </button>
     <button type="button" class="navbar-toggle collapsed shopping-cart" onclick="toggleNavButtons()" data-toggle="collapse" data-target="#navbar-shoppingcart" data-collapse-group="togglableNav" aria-expanded="false">
       <i class="fa fa-shopping-cart" aria-hidden="true"><span class="cart-count">5</span></i>
-    </button> 
+    </button>
   </div>
 
   <!-- OFFCANVAS GLOBAL MENU -->
   <div class="navbar-offcanvas offcanvas" id="navbar-global">
     <a class="navmenu-brand center-text" href="#">
-      <img class="img-responsive center-block" src="assets/images/logo-indieFrame.png">
+      <img class="img-responsive center-block" src="assets/images/logo-indieframe.png">
       <p class="brand-tag text-center">Connecting you to the media</p>
     </a>
     <ul class="nav navbar-nav">
-      <li><a href="#">Get the app</a></li>
-      <li><a href="#">How it works</a></li>
+      <li><a href="create-account.html">Get the app</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="#">Find reporter</a></li>
-      <li class=""><a href="#">Support</a></li>
+      <li class=""><a href="contact.html">Contact</a></li>
       <li>
         <div class="row social-buttons text-center">
           <div class="col-xs-3 btn-social-wrap">
@@ -257,38 +257,15 @@
           <div class="col-xs-3 btn-social-wrap">
             <a href="#" type="button" class="btn btn-primary btn-lg btn-social"><i class="fa fa-youtube"></i></a>
           </div>
-        </div> 
+        </div>
       </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">What we sell <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Photos</a></li>
-          <li><a href="#">Illustrations</a></li>
-          <li><a href="#">Video</a></li>
-          <li><a href="#">Audio</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ways to pay <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Plans and pricing</a></li>
-          <li><a href="#">Corperate accounts</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Need help? <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li>
-            <address>
-              <strong>Phone support</strong><br>
-              <abbr title="Phone">Denmark:</abbr> +45 35412314<br>
-              <abbr title="Phone">Toll-free:</abbr> 00 800
-            </address>
-          </li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </li>
+      <li><h3>Hidden pages</h3></li>
+      <li><a href="create-account.html">Create accont</a></li>
+      <li><a href="login-knownUser.html">Login Known User</a></li>
+      <li><a href="profile-public.html">Public Profile</a></li>
+      <li><a href="profile-private.html">Private Profile</a></li>
+      <li><a href="upload.html">Upload Media</a></li>
+      <li><a href="upload-addInfo.html">Add Media Info</a></li>
     </ul>
   </div><!-- OFFCANVAS GLOBAL MENU -->
 
@@ -303,21 +280,21 @@
       </button>
     </div>
     <ul class="nav navbar-nav">
-      <li class=""><a href="#"><i class="fa fa-inbox mobile-menu-icon" aria-hidden="true"></i>My Content</a></li>
-      <li><a href="#"><i class="fa fa-line-chart mobile-menu-icon" aria-hidden="true"></i>Statistics</a></li>
-      <li><a href="#"><i class="fa fa-comments mobile-menu-icon" aria-hidden="true"></i>Messages</a></li>
-      <li><a href="#"><i class="fa fa-users mobile-menu-icon" aria-hidden="true"></i>Connections</a></li>
+      <li class=""><a href="profile-public.html"><i class="fa fa-inbox mobile-menu-icon" aria-hidden="true"></i>My Content</a></li>
+      <li><a href="profile-public.html"><i class="fa fa-line-chart mobile-menu-icon" aria-hidden="true"></i>Statistics</a></li>
+      <li><a href="profile-public.html"><i class="fa fa-comments mobile-menu-icon" aria-hidden="true"></i>Messages</a></li>
+      <li><a href="profile-public.html"><i class="fa fa-users mobile-menu-icon" aria-hidden="true"></i>Connections</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog mobile-menu-icon" aria-hidden="true"></i>Profile settings <i class="fa fa-plus if-caret" aria-hidden="true"></i></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Edit Profile</a></li>
-          <li><a href="#">Change Password</a></li>
-          <li><a href="#">GEO Location</a></li>
-          <li><a href="#">Linked Accounts</a></li>
-          <li><a href="#">Payment and Purchase</a></li>
-          <li><a href="#">Payment Receival</a></li>
-          <li><a href="#">Notifications</a></li>
-          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="profile-private.html">Edit Profile</a></li>
+          <li><a href="profile-private.html">Change Password</a></li>
+          <li><a href="profile-private.html">GEO Location</a></li>
+          <li><a href="profile-private.html">Linked Accounts</a></li>
+          <li><a href="profile-private.html">Payment and Purchase</a></li>
+          <li><a href="profile-private.html">Payment Receival</a></li>
+          <li><a href="profile-private.html">Notifications</a></li>
+          <li><a href="profile-private.html">Terms and Conditions</a></li>
         </ul>
       </li>
     </ul>
@@ -335,7 +312,7 @@
     <ul class="nav navbar-nav shoppingCart-mobile cart-items">
       <li>
         <div class="cart-header">Your Cart <span class="item-count">(5)</span></div>
-          <div class="cart-item">
+          <div class="cart-item" onclick="window.location.href = 'feeditem.html';">
             <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
             <div class="cart-item-info">
               <div class="cart-item-title">Stock Name</div>
@@ -346,7 +323,7 @@
               <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
             </div>
           </div>
-          <div class="cart-item">
+          <div class="cart-item" onclick="window.location.href = 'feeditem.html';">
             <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
             <div class="cart-item-info">
               <div class="cart-item-title">Stock Name</div>
@@ -357,7 +334,7 @@
               <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
             </div>
           </div>
-          <div class="cart-item">
+          <div class="cart-item" onclick="window.location.href = 'feeditem.html';">
             <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
             <div class="cart-item-info">
               <div class="cart-item-title">Stock Name</div>
@@ -368,7 +345,7 @@
               <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
             </div>
           </div>
-          <div class="cart-item">
+          <div class="cart-item" onclick="window.location.href = 'feeditem.html';">
             <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
             <div class="cart-item-info">
               <div class="cart-item-title">Stock Name</div>
@@ -379,7 +356,7 @@
               <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
             </div>
           </div>
-          <div class="cart-item">
+          <div class="cart-item" onclick="window.location.href = 'feeditem.html';">
             <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
             <div class="cart-item-info">
               <div class="cart-item-title">Stock Name</div>
@@ -390,7 +367,7 @@
               <button type="button" class="close cart-item-delete" aria-label="Close"><span aria-hidden="true"><i class="fa fa-trash" aria-hidden="true"></i></span></button>
             </div>
           </div>
-          <div class="cart-item">
+          <div class="cart-item" onclick="window.location.href = 'feeditem.html';">
             <div class="cart-item-info"><img class="img-responsive" src="assets/images/flick1.jpg" alt="StockTitle by ReporterName"/></div>
             <div class="cart-item-info">
               <div class="cart-item-title">Stock Name</div>
@@ -405,16 +382,17 @@
           <button type="button" class="col-xs-12 btn btn-primary btn-lg btn-cart-checkout">Checkout</button>
       </li>
     </ul>
-    
+
   </div><!-- END COLLAPSE SHOPPING CART -->
 </nav>
+
 
     <main id="PageContent" class="no-actionbar">
       <div class="if-row" style="padding: 2em 1em;">
         <div class="container">
           <h1>About Indeframe</h1>
           <p class="if-manchet">Laborum nibh eu mauris non, pellentesque erat metus dui, maecenas arcu suspendisse consequat metus ut purus, mollis vel, faucibus ultricies. Sagittis congue nibh bibendum suspendisse nibh, laoreet blandit sem lacus, non neque sit viverra quis etiam.</p>
-          <img class="img-responsive" style="margin: 1em 0;" src="/assets/images/indeframe-photographer.jpeg" alt="Indieframe Photographer">
+          <img class="img-responsive" style="margin: 1em 0;" src="/assets/images/indieframe-photographer.jpeg" alt="Indieframe Photographer">
           <p>Lorem ipsum dolor sit amet, et morbi, semper nisl turpis ultricies. Dignissim pharetra in eget imperdiet tincidunt, duis diam consectetuer suspendisse egestas cras, curabitur dictumst blandit vestibulum, condimentum amet eget ut tellus etiam ipsum. In mattis sed sed luctus, cras montes, mauris nulla vitae dictumst laoreet, in eu id, auctor eros. Cursus purus aliquet magnis in eu, ut fugit velit, est posuere elit a semper ligula viverra, tortor vehicula luctus nulla ipsum et diam.</p>
           <p>Nullam fermentum est, massa nulla nunc turpis, faucibus sit. Laborum nibh eu mauris non, pellentesque erat metus dui, maecenas arcu suspendisse consequat metus ut purus, mollis vel, faucibus ultricies. Sagittis congue nibh bibendum suspendisse nibh, laoreet blandit sem lacus, non neque sit viverra quis etiam. Mollis ipsum dolor quibusdam aliquam, wisi dolor suspendisse sodales nunc lectus, a ante massa placerat, sit lorem velit neque natoque lorem.</p>
           <h2>Our Mission</h2>
