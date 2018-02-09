@@ -36,44 +36,26 @@ function layoutDesktop() {
 
 		$parent.find('.feed-inspect').css('height', inspectHeight);
 	  $parent.find('.feed-info').css('top', imgHeight);
-    //console.log( 'image is ' + result + ' for ' + image.img.src );
-		//console.log('image: ' + $img.outerHeight() + ' || item: ' + $parent.outerHeight());
 		$grid.isotope('layout');
   });
-
-	// $('.feed-item').find('.feed-thumb').one('load', function() {
-  //
-	// 	var imgHeight = $(this).outerHeight();
-	// 	var headerHeight = 0;
-	// 	var specsHeight = $('.feed-specs').outerHeight();
-	// 	var inspectHeight = imgHeight - (headerHeight + specsHeight);
-  //
-  //
-	//   $(this).parent().find('.feed-inspect').css('height', inspectHeight);
-	//   $(this).parent().find('.feed-info').css('top', imgHeight);
-  //
-	// }).each(function() {
-	// 	if(this.complete) $(this).load();
-	// 	//console.log($(this).attr('class'));
-	// 	//imgHeight = $(this).outerHeight();
-	// })
 }
 
 function layoutMobile() {
-	$('.item').css('margin-bottom', 0);
-	$('.feed-item').find('.feed-thumb').one('load', function() {
-		var imgHeight = $(this).innerHeight();
-		$(this).parent().find('.feed-specs').append('<div class="feed-seperator"></div>');
+	$('.grid-item').css('margin-bottom', 0);
+	$('.feed-item > .feed-thumb').imagesLoaded().progress( function( instance, image ) {
+    var result = image.isLoaded ? 'loaded' : 'broken';
+		var $img = $(image.img);
+		var $parent = $($img.parent());
 
-		$(this).parent().find('.feed-hashTags').css('border-bottom', 'none');
-		$(this).parent().find('.feed-locAndPrice').css('padding-top', 0 );
-	    $(this).parent().find('.feed-inspect').css({'position' : 'absolute', 'height' : imgHeight, 'margin-top' : -imgHeight});
-	    $(this).parent().find('.feed-info').css('position', 'relative');
+		var imgHeight = $img.outerHeight();
+		var headerHeight = 0;
+		var specsHeight = $parent.find($('.feed-specs')).outerHeight();
+		var inspectHeight = imgHeight - (headerHeight + specsHeight);
 
-
-	}).each(function() {
-		if(this.complete) $(this).load();
-	})
+		$parent.find('.feed-inspect').css('height', inspectHeight);
+	  $parent.find('.feed-info').css('top', imgHeight);
+		$grid.isotope('layout');
+  });
 }
 
 function clearMouseOver () {

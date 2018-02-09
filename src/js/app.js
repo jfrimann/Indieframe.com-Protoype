@@ -3,7 +3,7 @@
 //= require ../vendor/jquery-easing-1.3/jquery.easing.1.3.js
 //= require ../vendor/bootstrap-sass-official/assets/javascripts/bootstrap.js
 //= require partials/main.js
-//= require ../vendor/retinajs/dist/retina.js
+//= require ../../node_modules/retinajs/dist/retina.js
 //= require ../vendor/jasny-bootstrap/js/jasny-bootstrap.js
 //= require ../../node_modules/isotope-layout/dist/isotope.pkgd.min.js
 //= require ../../node_modules/imagesloaded/imagesloaded.pkgd.min.js
