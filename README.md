@@ -2,6 +2,7 @@
 This is a Frontend prototype of Indieframe.com webapp/website and was created in 2016. The project is ONLY for reference purposes.
 The prototype is no longer used by indieframe. Only parts remain here and there.
 You can see the prototype project [here:](http://dyrfri.dk/portfolio/indieframe)
+
 Indieframe's current website can be seen [here:](https://www.indieframe.com/)
 
 ## The project
